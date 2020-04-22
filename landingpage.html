@@ -10,42 +10,64 @@
     <link rel="stylesheet" href="Assets/CSS/customstyles.css">
     <title>Hello, world!</title>
   </head>
+  <!-- Hero Image-->
+
   <!-- Header with id of header-->
   <header id="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-grey ">
         <a class="navbar-brand" href="#">
-            <img id="header-image" src="Assets/Logos/logo.png" width="100" height="100" alt="">
+    <!-- Header image-->
+            <img id="header-img" src="Assets/Logos/logo.png" width="100" height="100" alt="">
           </a>
-        <a class="navbar-brand" href="#">Japanese Knives</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- nav bar-->
+        <div class="collapse navbar-collapse" id="nav-bar">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+            <li class="nav-item white">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item white">
               <a class="nav-link" href="#">Benefits</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item white">
                 <a class="nav-link" href="#">Pricing</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#video">Video</a>
+                <a class="nav-link" href="#video">Product Video</a>
             </li>
         </div>
       </nav>
   </header>
   <body>
-    <form action="">
-        Name: <input type="text" id="name">
-    </form>
-
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Looking for a sharper Knife?</h1>
+          <p>Welcome to Katana the best place to find top shelf knives from Japan</p>
+          <form action="">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                <small id="namehelp" class="form-text text-muted">Just your first name is fine.</small>
+              </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="checkbox" checked>
+              <label class="form-check-label" for="exampleCheck1" >Sign me up for your newsletter</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+    </div>
+        <!-- form-->
+        
+    </div>
 
     <iframe width="560" id="video" height="315" src="https://www.youtube.com/embed/Rb7mDSU0emM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <!-- Optional JavaScript -->
+    <script src="/Assets/custom-scripts.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
