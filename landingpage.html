@@ -8,64 +8,65 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/CSS/customstyles.css">
-    <title>Hello, world!</title>
+    <title>Katana: Sharpest blades from the East that you can find in the West</title>
   </head>
-  <!-- Hero Image-->
-
   <!-- Header with id of header-->
   <header id="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-grey ">
-        <a class="navbar-brand" href="#">
-    <!-- Header image-->
-            <img id="header-img" src="Assets/Logos/logo.png" width="100" height="100" alt="">
-          </a>
-    <!-- nav bar-->
-        <div class="collapse navbar-collapse" id="nav-bar">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item white">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item white">
-              <a class="nav-link" href="#">Benefits</a>
-            </li>
-            <li class="nav-item white">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#video">Product Video</a>
-            </li>
-        </div>
-      </nav>
-  </header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="#">
+        <!-- Header image-->
+                <img id="header-img" src="Assets/Logos/logo.png" width="100" height="100" alt="">
+            </a>
+        <!-- nav bar-->
+            <div class="collapse navbar-collapse" id="nav-bar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                    <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                    <a class="nav-link text-white" href="#">Benefits</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#video">Product Video</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
   <body>
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Looking for a sharper Knife?</h1>
-          <p>Welcome to Katana the best place to find top shelf knives from Japan</p>
-          <form action="">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
-                <small id="namehelp" class="form-text text-muted">Just your first name is fine.</small>
-              </div>
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="checkbox" checked>
-              <label class="form-check-label" for="exampleCheck1" >Sign me up for your newsletter</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
+            <div class="container">
+            <h1 class="display-4">Looking for a sharper Knife?</h1>
+            <p>Welcome to Katana the best place to find top shelf knives from Japan</p>
+            <!-- form-->
+            <form action="/email-submit">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                    <small id="namehelp" class="form-text text-muted">Just your first name is fine.</small>
+                </div>
+                <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="checkbox" checked>
+                <label class="form-check-label" for="exampleCheck1" >Sign me up for your newsletter</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
     </div>
-        <!-- form-->
+        
         
     </div>
-
-    <iframe width="560" id="video" height="315" src="https://www.youtube.com/embed/Rb7mDSU0emM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- video-->
+    <div >
+        <iframe width="560" id="video" height="315" src="https://www.youtube.com/embed/Rb7mDSU0emM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <!-- Optional JavaScript -->
     <script src="/Assets/custom-scripts.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -1,11 +1,11 @@
 .jumbotron {
     color: white;
-    background-image: url("https://cdnimg.webstaurantstore.com/images/products/large/166502/1501183.jpg");
+    background-image: url("https://images.pexels.com/photos/237996/pexels-photo-237996.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260dss");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
   }
-.white {
-    color: white;
+.brand {
+  color: #FFBA47;
 }
