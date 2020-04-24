@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/CSS/customstyles.css">
@@ -37,35 +38,55 @@
         </nav>
     </header>
   <body>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron1 jumbotron-fluid">
             <div class="container">
-            <h1 class="display-4">Looking for a sharper Knife?</h1>
-            <p>Welcome to Katana the best place to find top shelf knives from Japan</p>
+                <h1 class="d-flex">Where you'll find your last knife</h1>
+                <p>Welcome to Katana the best place to find top shelf knives from Japan</p>
             <!-- form-->
-            <form action="/email-submit">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
-                    <small id="namehelp" class="form-text text-muted">Just your first name is fine.</small>
-                </div>
-                <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="checkbox" checked>
-                <label class="form-check-label" for="exampleCheck1" >Sign me up for your newsletter</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                <form action="/email-submit">
+                    <div class="form-group ">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                        <small id="namehelp" class="form-text text-white">Just your first name is fine.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</small>
+                    </div>
+                        <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="checkbox" checked>
+                        <label class="form-check-label" for="exampleCheck1" >Sign me up for your newsletter</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
     </div>
         
-        
-    </div>
     <!-- video-->
-    <div >
-        <iframe width="560" id="video" height="315" src="https://www.youtube.com/embed/Rb7mDSU0emM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="jumbotron2 jumbotron-fluid">
+        <div class="container">
+            <h1>Products:</h1>
+            <div class="card float-none">
+                <img src="Assets/Images/JapaneseProduct1.jpg" alt="Knife" style="width:100%">
+                <h1>Tailored Jeans</h1>
+                <p class="price">$219.99</p>
+                <p>Japanese Knife</p>
+                <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card ">
+                <img src="Assets/Images/JapaneseProduct2.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Tailored Jeans</h1>
+                <p class="price">$319.99</p>
+                <p>Another Japanese Knife</p>
+                <p><button>Add to Cart</button></p>
+             </div>
+            <iframe width="560" id="video"  class="embed-responsive-item float-left" height="315" src="https://www.youtube.com/embed/Rb7mDSU0emM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- Footer-->
+    <div class="footer">
+        <p>Footer</p>
     </div>
     <!-- Optional JavaScript -->
     <script src="/Assets/custom-scripts.js"></script>

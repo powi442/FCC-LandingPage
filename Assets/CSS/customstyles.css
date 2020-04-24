@@ -1,11 +1,65 @@
-.jumbotron {
+h1 {
+  font-family: 'Anton', sans-serif;
+}
+.jumbotron1 {
+  color: white;
+  background-image: url("https://images.pexels.com/photos/237996/pexels-photo-237996.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260dss");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+#header-img {
+  filter: brightness(50%);
+}
+.jumbotron2 {
     color: white;
-    background-image: url("https://images.pexels.com/photos/237996/pexels-photo-237996.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260dss");
+    background-image: url("https://cdn.shopify.com/s/files/1/1041/0210/products/IMG_2490_800x.jpg?v=1533713140");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
   }
+
 .brand {
   color: #FFBA47;
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.container {
+  padding: 308px;
 }
