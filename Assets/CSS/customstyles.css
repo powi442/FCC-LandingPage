@@ -1,12 +1,19 @@
+@media (max-width: 1000px) {
+  .languagepagepadding {
+    padding: 0px;
+  }
+  h1 {
+    color: black;
+  }
+}
+
 h1 {
   font-family: 'Anton', sans-serif;
 }
 a {
   font-size: 1em;
 }
-#products {
-  color: black;
-}
+
 .jumbotron1 {
     color: white;
     background-image: url("https://cdn.shopify.com/s/files/1/1041/0210/products/IMG_2490_800x.jpg?v=1533713140");
@@ -16,17 +23,6 @@ a {
     height: 100vh;
   }
 
-.brand {
-  color: #FFBA47;
-}
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #FFBA47;
-  color: white;
-  text-align: center;
-}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -62,4 +58,26 @@ a {
 }
 #container2 {
   background-image: url("/Assets/Images/JapaneseKnife2.jpg");
+}
+body {
+  background: #00b09b;
+  background: -webkit-linear-gradient(to right, #FFFFFF, #444E59);
+  background: linear-gradient(to right, #FFFFFF, #444E59);
+  min-height: 100vh;
+}
+.nav-link {
+  font-size: 30px;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #FF5B44;
+  border-color: #FF5B44;
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FFBA47;
+  color: white;
+  text-align: center;
 }

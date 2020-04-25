@@ -10,25 +10,27 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/CSS/customstyles.css">
     <title>Katana: Sharpest blades from the East that you can find in the West</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <!-- Header with id of header-->
   <header id="header">
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light fixed-top">
             <a class="navbar-brand" href="#">
         <!-- Header image-->
                 <img id="header-img" src="Assets/Logos/logo.png" width="100" height="100" alt="">
             </a>
         <!-- nav bar-->
-            <div class="collapse navbar-collapse" id="nav-bar">
+            <div class="collapse navbar-collapse" >
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
                     <a class="nav-link text-white" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item ">
-                    <a class="nav-link text-white" href="#products">Product List</a>
+                    <a class="nav-link text-white" href="#products">Products</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link text-white" href="#video">Product Video</a>
+                        <a class="nav-link text-white" href="#video">Video</a>
                     </li>
                 </ul>
             </div>
@@ -39,30 +41,26 @@
             <div id="home" class="container landingpagepadding">
                 <h1 class="d-flex">Where you'll find your last knife</h1>
                 <p>Welcome to Katana the best place to find top shelf knives from Japan</p>
-            <!-- form-->
-                    <div class="form-group ">
+                <div class="form-group">
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" aria-describedby="nameHelp" required>
-                        <small id="namehelp" class="form-text text-white">Just your first name is fine.</small>
-                    </div>
-                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="email@gmail.com"required>
                         <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
-                        <small id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</small>
-                    </div>
-                        <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="checkbox" checked>
-                        <label class="form-check-label" for="exampleCheck1" >Sign me up for your newsletter</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                            <small id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</small>
+                            <input type="checkbox" class="form-check-input" id="checkbox" checked>
+                            <label class="form-check-label" for="exampleCheck1" >Sign me up for your newsletter</label>
+                            <br>
+                            <input id="submit" type="submit" class="btn btn-primary">
+                    </form>
+                </div>
             </div>
     </div>
         
     <div id="container2" class="container py-5">
         <div class="row">
             <div class="clow-lg-8 mx-auto">
-                <h1>Product List</h1>
+                <h1 id="products" class="text-center">Products</h1>
                 <ul class="list-group shadow">
                     <!-- List group item-->
                     <li class="list-group-item">
@@ -83,7 +81,7 @@
                                     <li class="list-inline-item m-0"><i class="fa fa-star-o text-gray"></i></li>
                                 </ul>
                             </div>
-                            <p><button>Add to Cart</button></p>
+                            <p><button class="btn btn-primary" >Add to Cart</button></p>
                         </div>
                      </div>
                     </li>
@@ -103,10 +101,10 @@
                                         <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
                                         <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
                                         <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                                        <li class="list-inline-item m-0"><i class="fa fa-star-o text-gray"></i></li>
+                                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
                                     </ul>
                                 </div>
-                                <p><button>Add to Cart</button></p>
+                                <p><button class="btn btn-primary">Add to Cart</button></p>
                             </div>
                          </div>
                     </li>
@@ -114,8 +112,8 @@
             </div>
         </div>
         <div class="text-center">
-            <h1>Product Video: </h1>
-        <iframe width="560" id="video"  class="embed-responsive-item .text-center " height="315" src="https://www.youtube.com/embed/Rb7mDSU0emM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h1>Product Video:</h1>
+            <iframe width="560" id="video"  class="embed-responsive-item .text-center " height="315" src="https://www.youtube.com/embed/Rb7mDSU0emM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
     
@@ -131,16 +129,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
-
-<!-- Bennies and Video
-            </div>
-
-                <h1 id="benefits">Benefits</h1>
-                <ul>
-                    <li>Sharpest Knives in the world</li>
-                    <li>They are thin and lightweight</li>
-                    <li>Made from the best types of steel</li>
-                </ul>
-            </div>
-        </div>
--->
