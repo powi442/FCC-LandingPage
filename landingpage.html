@@ -13,7 +13,7 @@
   </head>
   <!-- Header with id of header-->
   <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
             <a class="navbar-brand" href="#">
         <!-- Header image-->
                 <img id="header-img" src="Assets/Logos/logo.png" width="100" height="100" alt="">
@@ -22,13 +22,10 @@
             <div class="collapse navbar-collapse" id="nav-bar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                    <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item ">
-                    <a class="nav-link text-white" href="#">Benefits</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link text-white" href="#">Pricing</a>
+                    <a class="nav-link text-white" href="#products">Product List</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link text-white" href="#video">Product Video</a>
@@ -39,19 +36,18 @@
     </header>
   <body>
     <div class="jumbotron1 jumbotron-fluid">
-            <div class="container">
+            <div id="home" class="container landingpagepadding">
                 <h1 class="d-flex">Where you'll find your last knife</h1>
                 <p>Welcome to Katana the best place to find top shelf knives from Japan</p>
             <!-- form-->
-                <form action="/email-submit">
                     <div class="form-group ">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="name" aria-describedby="nameHelp" required>
                         <small id="namehelp" class="form-text text-white">Just your first name is fine.</small>
                     </div>
                     <div class="form-group">
                         <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
                         <small id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</small>
                     </div>
                         <div class="form-group form-check">
@@ -63,31 +59,70 @@
             </div>
     </div>
         
-    <!-- video-->
-    <div class="jumbotron2 jumbotron-fluid">
-        <div class="container">
-            <h1>Products:</h1>
-            <div class="card float-none">
-                <img src="Assets/Images/JapaneseProduct1.jpg" alt="Knife" style="width:100%">
-                <h1>Tailored Jeans</h1>
-                <p class="price">$219.99</p>
-                <p>Japanese Knife</p>
-                <p><button>Add to Cart</button></p>
+    <div id="container2" class="container py-5">
+        <div class="row">
+            <div class="clow-lg-8 mx-auto">
+                <h1>Product List</h1>
+                <ul class="list-group shadow">
+                    <!-- List group item-->
+                    <li class="list-group-item">
+                    <!-- Custom content-->
+                     <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+                        <img src="Assets/Images/JapaneseProduct1.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1">
+                        <div class="media-body order-2 order-lg-1">
+                            
+                            <h5 class="mt-0 font-weight-bold mb-2">Japanese knife 1</h5>
+                            <p class="font-italic text-muted mb-0 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga autem maiores necessitatibus.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-1">
+                                <h6 class="font-weight-bold my-2">$120.00</h6>
+                                <ul class="list-inline small">
+                                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                    <li class="list-inline-item m-0"><i class="fa fa-star-o text-gray"></i></li>
+                                </ul>
+                            </div>
+                            <p><button>Add to Cart</button></p>
+                        </div>
+                     </div>
+                    </li>
+                    <!-- Second custom content-->
+                    <li class="list-group-item">
+                        <!-- Custom content-->
+                         <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+                            <img src="Assets/Images/JapaneseProduct2.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1">
+                            <div class="media-body order-2 order-lg-1">
+                                
+                                <h5 class="mt-0 font-weight-bold mb-2">Japanese knife 2</h5>
+                                <p class="font-italic text-muted mb-0 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga autem maiores necessitatibus.</p>
+                                <div class="d-flex align-items-center justify-content-between mt-1">
+                                    <h6 class="font-weight-bold my-2">$220.00</h6>
+                                    <ul class="list-inline small">
+                                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                        <li class="list-inline-item m-0"><i class="fa fa-star-o text-gray"></i></li>
+                                    </ul>
+                                </div>
+                                <p><button>Add to Cart</button></p>
+                            </div>
+                         </div>
+                    </li>
+                </ul>
             </div>
-            <div class="card ">
-                <img src="Assets/Images/JapaneseProduct2.jpg" alt="Denim Jeans" style="width:100%">
-                <h1>Tailored Jeans</h1>
-                <p class="price">$319.99</p>
-                <p>Another Japanese Knife</p>
-                <p><button>Add to Cart</button></p>
-             </div>
-            <iframe width="560" id="video"  class="embed-responsive-item float-left" height="315" src="https://www.youtube.com/embed/Rb7mDSU0emM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="text-center">
+            <h1>Product Video: </h1>
+        <iframe width="560" id="video"  class="embed-responsive-item .text-center " height="315" src="https://www.youtube.com/embed/Rb7mDSU0emM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
+    
     <!-- Footer-->
-    <div class="footer">
-        <p>Footer</p>
-    </div>
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="#home"> Katana</a>
+      </div>
     <!-- Optional JavaScript -->
     <script src="/Assets/custom-scripts.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -96,3 +131,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<!-- Bennies and Video
+            </div>
+
+                <h1 id="benefits">Benefits</h1>
+                <ul>
+                    <li>Sharpest Knives in the world</li>
+                    <li>They are thin and lightweight</li>
+                    <li>Made from the best types of steel</li>
+                </ul>
+            </div>
+        </div>
+-->
